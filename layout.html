@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: #f8fafc;
+        }
+
+        /* MENU – chỉ là khung, chưa có chữ */
+        .navbar {
+            height: 60px;
+            background: #334155;
+        }
+
+        /* LAYOUT 1 - 3 - 1 */
+        .layout {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        .side {
+            background: #f1f5f9;
+        }
+
+        .main {
+            background: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- KHUNG MENU -->
+    <div class="navbar"></div>
+
+    <!-- KHUNG ĐẤT -->
+    <div class="layout">
+        <div class="side"></div>
+        <div class="main" id="workspace"></div>
+        <div class="side"></div>
+    </div>
+
+</body>
+</html>
