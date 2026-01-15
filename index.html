@@ -2,95 +2,14 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Web của Phạm An</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #e5e7eb;
-        }
-
-        /* MENU */
-        .navbar {
-            background: #1f2937;
-            padding: 15px 25px;
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin-right: 25px;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .login {
-            margin-left: auto;
-            background: #2563eb;
-            padding: 8px 18px;
-            border-radius: 6px;
-        }
-
-        /* LAYOUT 1 - 3 - 1 */
-        .layout {
-            display: grid;
-            grid-template-columns: 1fr 3fr 1fr;
-            min-height: calc(100vh - 60px);
-        }
-
-        .side {
-            background: #f3f4f6; /* màu nhạt */
-        }
-
-        .main {
-            background: white;
-            padding: 40px;
-        }
-
-        h2 {
-            margin-top: 0;
-            font-size: 24px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-    </style>
+    <title>App</title>
 </head>
-
 <body>
 
-    <!-- MENU -->
-    <div class="navbar">
-        <a href="#">Trang chủ</a>
-        <a href="#">MODUN TÍNH TOÁN</a>
-        <a href="#">Data</a>
-        <a href="#">Tài liệu</a>
-        <a href="#">Dự trữ</a>
-        <a href="#">Dự trữ 2</a>
-        <a href="#" class="login">Đăng nhập</a>
-    </div>
-
-    <!-- LAYOUT 1 - 3 - 1 -->
-    <div class="layout">
-        <!-- DỰ TRỮ TRÁI -->
-        <div class="side"></div>
-
-        <!-- NỘI DUNG CHÍNH -->
-        <div class="main">
-            <h2>Khu vực làm việc chính</h2>
-            <p>
-                Đây là vùng trung tâm (tỉ lệ 3).  
-                Sau này bạn có thể đặt module tính toán, bảng dữ liệu, biểu đồ…
-            </p>
-        </div>
-
-        <!-- DỰ TRỮ PHẢI -->
-        <div class="side"></div>
-    </div>
+<script>
+    // Trang chính chỉ làm nhiệm vụ chuyển hướng
+    window.location.replace("layout.html");
+</script>
 
 </body>
 </html>
